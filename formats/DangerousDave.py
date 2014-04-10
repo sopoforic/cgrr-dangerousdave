@@ -94,7 +94,7 @@ class DangerousDave(yapsy.IPlugin.IPlugin):
         row_bytes = width//8
 
         # There's an extra row of image data on each tile that needs to be
-        # thrown away. No idea why.
+        # thrown away. No idea why. Issue #2.
         if row_bytes * (rows + 1) * 4 == len(tile):
             tile = tile[:-(row_bytes*4)]
         # Not all tiles seem to follow the same format. One of them claims to be
