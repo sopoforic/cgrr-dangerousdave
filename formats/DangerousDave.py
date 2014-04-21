@@ -67,7 +67,7 @@ class DangerousDave(yapsy.IPlugin.IPlugin):
                     width = tiles[i][0]
                     length = tiles[i][2]
                     tiles[i] = (tiles[i][4:], (width, length))
-
+        # return non-blank tiles
         return list(filter(None, map(DangerousDave.convert_tile, tiles)))
 
     @staticmethod
@@ -141,7 +141,9 @@ class DangerousDave(yapsy.IPlugin.IPlugin):
         # two pixels per byte.
         image = [0]*(2*len(tile))
 
-        # See doc/DangerousDave.txt for details about the image format.
+        # For details about the image format, see:
+        #
+        # bitbucket.org/sopoforic/cgrr/wiki/Dangerous Dave EGA Tileset Format
 
         # For each actual row in the image
         for i in range(rows):
