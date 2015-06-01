@@ -56,7 +56,6 @@ def extract_tiles(path):
             if len(tiles[i]) == 128:
                 tiles[i] = (tiles[i], (16, 16))
             else:
-                num = tiles[i][0]
                 width = tiles[i][0]
                 length = tiles[i][2]
                 tiles[i] = (tiles[i][4:], (width, length))
