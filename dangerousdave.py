@@ -102,7 +102,7 @@ def convert_tile(tilepack):
     row_bytes = width//8
 
     # There's an extra row of image data on each tile that needs to be
-    # thrown away. No idea why. Issue #2.
+    # thrown away. No idea why. Issue #1.
     if row_bytes * (rows + 1) * 4 == len(tile):
         tile = tile[:-(row_bytes*4)]
     # Not all tiles seem to follow the same format. One of them claims to be
@@ -134,7 +134,7 @@ def convert_tile(tilepack):
 
     # For details about the image format, see:
     #
-    # bitbucket.org/sopoforic/cgrr/wiki/Dangerous Dave EGA Tileset Format
+    # github.com/sopoforic/cgrr-dangerousdave/wiki/Dangerous%20Dave%20EGA%20Tileset%20Format
 
     # For each actual row in the image
     for i in range(rows):
