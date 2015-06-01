@@ -16,14 +16,13 @@
 # You should have received a copy of the GNU General Public License
 # along with CGRR.  If not, see <http://www.gnu.org/licenses/>.
 """Parses Dangerous Dave files."""
-import logging
 import struct
 import os
 
 from PIL import Image
 
-import utilities
-from utilities import File
+import cgrr
+from cgrr import File
 
 """Parses Dangerous Dave files."""
 
@@ -38,7 +37,7 @@ identifying_files = [
 
 def verify(path):
     """Verifies that the provided path is the supported game."""
-    return utilities.verify(identifying_files, path)
+    return cgrr.verify(identifying_files, path)
 
 def extract_tiles(path):
     """Extract the tiles."""
