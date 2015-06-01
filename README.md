@@ -32,4 +32,6 @@ License
 This module is available under the GPL v3 or later. See the file COPYING for
 details.
 
+[![Code Health](https://landscape.io/github/sopoforic/cgrr-dangerousdave/master/landscape.svg?style=flat)](https://landscape.io/github/sopoforic/cgrr-dangerousdave/master)
+
 [1]: https://github.com/sopoforic/cgrr-dangerousdave/wiki/Dangerous%20Dave%20EGA%20Tileset%20Format
