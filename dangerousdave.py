@@ -24,8 +24,6 @@ from PIL import Image
 import cgrr
 from cgrr import File
 
-"""Parses Dangerous Dave files."""
-
 key = "dangerous_dave_a"
 title = "Dangerous Dave"
 developer = "John Romero"
